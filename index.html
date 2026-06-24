@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#B8956A" />
+
+    <!-- GitHub Pages SPA routing fix -->
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+
+    <!-- Primary Meta -->
+    <title>Παντελής Βιωνής | Σύμβουλος Ψυχικής Υγείας & Κλινικός Διαιτολόγος | Αθήνα</title>
+    <meta name="description" content="Ατομική ψυχολογική συμβουλευτική CBT, ομαδική θεραπεία και ψυχολογία διατροφής στα Κάτω Πετράλωνα. Online συνεδρίες μέσω Zoom." />
+    <meta name="keywords" content="ψυχολόγος, ψυχοθεραπεία, CBT, γνωσιακή συμπεριφορική θεραπεία, ομαδική θεραπεία, συναισθηματική υπερφαγία, διατροφική ψυχολογία, online ψυχοθεραπεία, Κάτω Πετράλωνα, Αθήνα" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://pantelisvionis.gr/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pantelisvionis.gr/" />
+    <meta property="og:title" content="Παντελής Βιωνής | Σύμβουλος Ψυχικής Υγείας & Κλινικός Διαιτολόγος" />
+    <meta property="og:description" content="Ατομική CBT συμβουλευτική, ομαδική θεραπεία και ψυχολογία διατροφής. Κάτω Πετράλωνα & Online." />
+    <meta property="og:image" content="https://pantelisvionis.gr/images/office-room.jpg" />
+    <meta property="og:locale" content="el_GR" />
+    <meta property="og:site_name" content="Παντελής Βιωνής" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Παντελής Βιωνής | Σύμβουλος Ψυχικής Υγείας" />
+    <meta name="twitter:description" content="Ατομική CBT συμβουλευτική, ομαδική θεραπεία και ψυχολογία διατροφής. Κάτω Πετράλωνα & Online." />
+    <meta name="twitter:image" content="https://pantelisvionis.gr/images/office-room.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23B8956A'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='white' font-family='serif'>Ψ</text></svg>" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
+          "@id": "https://pantelisvionis.gr/#business",
+          "name": "Παντελής Βιωνής – Σύμβουλος Ψυχικής Υγείας",
+          "description": "Ατομική ψυχολογική συμβουλευτική CBT, ομαδική θεραπεία και ψυχολογία διατροφής. Γραφείο στα Κάτω Πετράλωνα και online.",
+          "url": "https://pantelisvionis.gr",
+          "telephone": "+306947036194",
+          "email": "panteliscare@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Αγηιδών 32β",
+            "addressLocality": "Κάτω Πετράλωνα",
+            "addressRegion": "Αττική",
+            "addressCountry": "GR"
+          },
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61576811345688",
+            "https://www.instagram.com/pantelis.mindspace"
+          ],
+          "priceRange": "€€",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "21:00"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://pantelisvionis.gr/#person",
+          "name": "Παντελής Βιωνής",
+          "jobTitle": "Σύμβουλος Ψυχικής Υγείας – CBT Practitioner & Κλινικός Διαιτολόγος",
+          "url": "https://pantelisvionis.gr",
+          "email": "panteliscare@gmail.com",
+          "telephone": "+306947036194",
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61576811345688",
+            "https://www.instagram.com/pantelis.mindspace"
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
