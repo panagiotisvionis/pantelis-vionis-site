@@ -5,3 +5,7 @@ dist/
 .env.production
 *.log
 .DS_Store
+*.jpg
+*.jpeg
+*.png
+!public/images/**
