@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import SEOHead from '../components/ui/SEOHead.jsx'
 import ScrollReveal from '../components/ui/ScrollReveal.jsx'
+import { imgUrl } from '../utils/imgUrl.js'
 import './About.css'
 
 const credentials = [
@@ -93,7 +94,7 @@ export default function About() {
           <ScrollReveal direction="left" className="about-bio__image">
             <div className="img-frame about-bio__frame">
               <img
-                src="/images/pantelis-portrait.jpg"
+                src={imgUrl('/images/pantelis-portrait.jpg')}
                 alt="Παντελής Βιωνής — Σύμβουλος Ψυχικής Υγείας & Κλινικός Διαιτολόγος"
                 loading="eager"
                 decoding="async"
@@ -198,7 +199,7 @@ export default function About() {
             <ScrollReveal className="office-gallery__main">
               <div className="img-frame" style={{ borderRadius: 'var(--radius-2xl)', overflow: 'hidden' }}>
                 <img
-                  src="/images/office-full.jpg"
+                  src={imgUrl('/images/office-full.jpg')}
                   alt="Πλήρης άποψη του θεραπευτικού χώρου — Κάτω Πετράλωνα"
                   loading="lazy"
                   decoding="async"
@@ -210,7 +211,7 @@ export default function About() {
               <ScrollReveal delay={100}>
                 <div className="img-frame" style={{ borderRadius: 'var(--radius-xl)', overflow: 'hidden' }}>
                   <img
-                    src="/images/office-room.jpg"
+                    src={imgUrl('/images/office-room.jpg')}
                     alt="Χώρος συνεδρίας με ζεστά φωτιστικά και έργα τέχνης"
                     loading="lazy"
                     decoding="async"
@@ -221,7 +222,7 @@ export default function About() {
               <ScrollReveal delay={200}>
                 <div className="img-frame" style={{ borderRadius: 'var(--radius-xl)', overflow: 'hidden' }}>
                   <img
-                    src="/images/office-fountain.jpg"
+                    src={imgUrl('/images/office-fountain.jpg')}
                     alt="Εσωτερικός καταρράκτης — λεπτομέρεια από το θεραπευτήριο"
                     loading="lazy"
                     decoding="async"

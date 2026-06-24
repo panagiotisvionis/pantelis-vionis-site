@@ -2,6 +2,7 @@ import { useParams, Link, Navigate } from 'react-router-dom'
 import SEOHead from '../components/ui/SEOHead.jsx'
 import ScrollReveal from '../components/ui/ScrollReveal.jsx'
 import { articles } from '../data/articles.js'
+import { imgUrl } from '../utils/imgUrl.js'
 import './ArticleDetail.css'
 
 function renderBlock(block, i) {
@@ -75,7 +76,7 @@ export default function ArticleDetail() {
       <section className="article-hero" aria-label="Εισαγωγή άρθρου">
         <div className="article-hero__img-wrap">
           <img
-            src={article.image}
+            src={imgUrl(article.image)}
             alt={article.imageAlt}
             loading="eager"
             decoding="async"
@@ -151,7 +152,7 @@ export default function ArticleDetail() {
                 <div className="sidebar-related__list">
                   {otherArticles.map((a) => (
                     <Link key={a.slug} to={`/articles/${a.slug}`} className="sidebar-related__item">
-                      <img src={a.image} alt={a.imageAlt} loading="lazy" decoding="async" />
+                      <img src={imgUrl(a.image)} alt={a.imageAlt} loading="lazy" decoding="async" />
                       <div>
                         <span className="sidebar-related__cat">{a.category}</span>
                         <span className="sidebar-related__title">{a.title}</span>

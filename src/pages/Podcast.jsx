@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import SEOHead from '../components/ui/SEOHead.jsx'
 import ScrollReveal from '../components/ui/ScrollReveal.jsx'
+import { imgUrl } from '../utils/imgUrl.js'
 import './Podcast.css'
 
 const episodes = [
@@ -58,7 +59,7 @@ export default function Podcast() {
       <section className="podcast-hero" aria-label="Εισαγωγή podcast">
         <div className="podcast-hero__bg" aria-hidden="true">
           <img
-            src="/images/pantelis-portrait.jpg"
+            src={imgUrl('/images/pantelis-portrait.jpg')}
             alt=""
             loading="eager"
             decoding="async"

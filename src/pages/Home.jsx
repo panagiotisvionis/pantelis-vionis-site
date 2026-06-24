@@ -3,6 +3,7 @@ import SEOHead from '../components/ui/SEOHead.jsx'
 import ScrollReveal from '../components/ui/ScrollReveal.jsx'
 import { articles } from '../data/articles.js'
 import { faqItems } from '../data/faq.js'
+import { imgUrl } from '../utils/imgUrl.js'
 import './Home.css'
 
 const services = [
@@ -114,7 +115,7 @@ export default function Home() {
           <div className="hero__image-wrap" aria-hidden="true">
             <div className="hero__image-frame">
               <img
-                src="/images/office-room.jpg"
+                src={imgUrl('/images/office-room.jpg')}
                 alt="Ο χώρος ψυχοθεραπείας του Παντελή Βιωνή στα Κάτω Πετράλωνα"
                 loading="eager"
                 decoding="async"
@@ -179,7 +180,7 @@ export default function Home() {
           <ScrollReveal direction="left" className="about-teaser__image-wrap">
             <div className="img-frame about-teaser__frame">
               <img
-                src="/images/pantelis-portrait.jpg"
+                src={imgUrl('/images/pantelis-portrait.jpg')}
                 alt="Παντελής Βιωνής — Σύμβουλος Ψυχικής Υγείας & Κλινικός Διαιτολόγος"
                 loading="lazy"
                 decoding="async"
@@ -189,7 +190,7 @@ export default function Home() {
             </div>
             <div className="about-teaser__accent-img">
               <img
-                src="/images/office-chairs.jpg"
+                src={imgUrl('/images/office-chairs.jpg')}
                 alt="Χώρος συνεδρίας στα Κάτω Πετράλωνα"
                 loading="lazy"
                 decoding="async"
@@ -343,7 +344,7 @@ export default function Home() {
       {/* ── CTA SECTION ── */}
       <section className="cta-section" aria-labelledby="cta-heading">
         <div className="cta-section__bg" aria-hidden="true">
-          <img src="/images/office-waiting.jpg" alt="" loading="lazy" decoding="async" />
+          <img src={imgUrl('/images/office-waiting.jpg')} alt="" loading="lazy" decoding="async" />
         </div>
         <div className="container cta-section__inner">
           <ScrollReveal>

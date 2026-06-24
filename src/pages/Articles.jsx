@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import SEOHead from '../components/ui/SEOHead.jsx'
 import ScrollReveal from '../components/ui/ScrollReveal.jsx'
 import { articles } from '../data/articles.js'
+import { imgUrl } from '../utils/imgUrl.js'
 import './Articles.css'
 
 export default function Articles() {
@@ -47,7 +48,7 @@ export default function Articles() {
               <article className="article-featured">
                 <Link to={`/articles/${articles[0].slug}`} className="article-featured__img-wrap" tabIndex="-1" aria-hidden="true">
                   <img
-                    src={articles[0].image}
+                    src={imgUrl(articles[0].image)}
                     alt={articles[0].imageAlt}
                     loading="eager"
                     decoding="async"
@@ -80,7 +81,7 @@ export default function Articles() {
                 <ScrollReveal key={a.slug} delay={i * 100}>
                   <article className="article-card-v">
                     <Link to={`/articles/${a.slug}`} className="article-card-v__img-wrap" tabIndex="-1" aria-hidden="true">
-                      <img src={a.image} alt={a.imageAlt} loading="lazy" decoding="async" />
+                      <img src={imgUrl(a.image)} alt={a.imageAlt} loading="lazy" decoding="async" />
                       <span className="article-card-v__category">{a.category}</span>
                     </Link>
                     <div className="article-card-v__body">

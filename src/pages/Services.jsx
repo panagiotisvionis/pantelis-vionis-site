@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
 import SEOHead from '../components/ui/SEOHead.jsx'
 import ScrollReveal from '../components/ui/ScrollReveal.jsx'
+import { imgUrl } from '../utils/imgUrl.js'
 import './Services.css'
 
 const services = [
   {
     id: 'cbt',
-    image: '/images/office-chairs.jpg',
+    image: imgUrl('/images/office-chairs.jpg'),
     imageAlt: 'Χώρος ατομικής CBT συμβουλευτικής',
     eyebrow: 'Ατομική Υποστήριξη',
     title: 'Ατομική Συμβουλευτική CBT',
@@ -29,7 +30,7 @@ const services = [
   },
   {
     id: 'group',
-    image: '/images/office-room.jpg',
+    image: imgUrl('/images/office-room.jpg'),
     imageAlt: 'Ευρύς χώρος για ομαδική ψυχοθεραπεία',
     eyebrow: 'Ομαδική Υποστήριξη',
     title: 'Ομαδική Ψυχοθεραπεία',
@@ -50,7 +51,7 @@ const services = [
   },
   {
     id: 'dietary',
-    image: '/images/office-waiting.jpg',
+    image: imgUrl('/images/office-waiting.jpg'),
     imageAlt: 'Χώρος αναμονής — Ομάδα Διατροφικής Εμπειρίας',
     eyebrow: '12 Εβδομάδες',
     title: 'Ομάδα Διατροφικής Εμπειρίας',
@@ -71,7 +72,7 @@ const services = [
   },
   {
     id: 'online',
-    image: '/images/office-fountain.jpg',
+    image: imgUrl('/images/office-fountain.jpg'),
     imageAlt: 'Εσωτερικός καταρράκτης — σύμβολο ήρεμης ψυχολογικής υποστήριξης',
     eyebrow: 'Online',
     title: 'Online Συνεδρίες μέσω Zoom',
@@ -111,7 +112,7 @@ export default function Services() {
         title="Υπηρεσίες"
         description="Ατομική CBT, ομαδική ψυχοθεραπεία, ομάδα διατροφικής εμπειρίας (12 εβδομάδες) και online συνεδρίες μέσω Zoom. Κάτω Πετράλωνα, Αθήνα."
         path="/services"
-        image="/images/office-chairs.jpg"
+        image={imgUrl('/images/office-chairs.jpg')}
         schema={schema}
       />
 
