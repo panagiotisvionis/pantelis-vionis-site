@@ -58,7 +58,7 @@ export default function Contact() {
       email: 'panteliscare@gmail.com',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Αγηιδών 32β',
+        streetAddress: 'Αιγηιδών 32β',
         addressLocality: 'Κάτω Πετράλωνα',
         addressRegion: 'Αθήνα',
         addressCountry: 'GR',
@@ -139,7 +139,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <span className="contact-info__label">Διεύθυνση</span>
-                      <span className="contact-info__value">Αγηιδών 32β, Κάτω Πετράλωνα, Αθήνα</span>
+                      <span className="contact-info__value">Αιγηιδών 32β, Κάτω Πετράλωνα, Αθήνα</span>
                     </div>
                   </li>
                   <li>
@@ -192,7 +192,7 @@ export default function Contact() {
             {/* Map placeholder */}
             <div className="contact-map" aria-label="Χάρτης τοποθεσίας">
               <iframe
-                title="Χάρτης: Αγηιδών 32β, Κάτω Πετράλωνα"
+                title="Χάρτης: Αιγηιδών 32β, Κάτω Πετράλωνα"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.5!2d23.7092!3d37.9698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd27aa!2z0JrQsNGC0LUg0J_QtNGC0YDQsNC70YjQvdCw!5e0!3m2!1sel!2sgr!4v1"
                 width="100%"
                 height="220"
@@ -201,7 +201,7 @@ export default function Contact() {
                 style={{ border: 0, borderRadius: 'var(--radius-xl)' }}
               />
               <p className="contact-map__address">
-                Αγηιδών 32β, Κάτω Πετράλωνα · Αθήνα
+                Αιγηιδών 32β, Κάτω Πετράλωνα · Αθήνα
               </p>
             </div>
           </ScrollReveal>
