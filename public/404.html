@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <title>Παντελής Βιωνής</title>
     <script>
-      sessionStorage.redirect = location.href;
+      // SPA redirect: save original URL, redirect to site root
+      var l = window.location;
+      var base = '/' + l.pathname.split('/')[1] + '/';
+      sessionStorage.spaRedirect = l.href;
+      l.replace(l.protocol + '//' + l.host + base);
     </script>
-    <meta http-equiv="refresh" content="0;URL='/pantelis-vionis-site/'">
   </head>
 </html>
