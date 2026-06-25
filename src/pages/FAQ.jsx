@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import SEOHead from '../components/ui/SEOHead.jsx'
 import ScrollReveal from '../components/ui/ScrollReveal.jsx'
 import { faqItems } from '../data/faq.js'
+import PageHeroBg from '../components/ui/PageHeroBg.jsx'
 import './FAQ.css'
 
 const categories = ['Όλα', 'Θεραπεία', 'Συνεδρίες', 'Online', 'Ομάδες', 'Απόρρητο', 'Επικοινωνία']
@@ -71,6 +72,7 @@ export default function FAQ() {
 
       {/* Page Hero */}
       <section className="page-hero" aria-label="Εισαγωγή σελίδας">
+        <PageHeroBg page="faq" />
         <div className="container">
           <ScrollReveal>
             <span className="eyebrow">Έχεις απορίες</span>

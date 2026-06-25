@@ -3,6 +3,7 @@ import SEOHead from '../components/ui/SEOHead.jsx'
 import ScrollReveal from '../components/ui/ScrollReveal.jsx'
 import { articles } from '../data/articles.js'
 import { imgUrl } from '../utils/imgUrl.js'
+import PageHeroBg from '../components/ui/PageHeroBg.jsx'
 import './Articles.css'
 
 export default function Articles() {
@@ -27,6 +28,7 @@ export default function Articles() {
 
       {/* Page Hero */}
       <section className="page-hero" aria-label="Εισαγωγή σελίδας">
+        <PageHeroBg page="articles" />
         <div className="container">
           <ScrollReveal>
             <span className="eyebrow">Σκέψεις &amp; Κείμενα</span>

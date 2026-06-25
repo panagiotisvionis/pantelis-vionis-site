@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import SEOHead from '../components/ui/SEOHead.jsx'
 import ScrollReveal from '../components/ui/ScrollReveal.jsx'
 import { imgUrl } from '../utils/imgUrl.js'
+import PageHeroBg from '../components/ui/PageHeroBg.jsx'
 import './About.css'
 
 const credentials = [
@@ -76,6 +77,7 @@ export default function About() {
 
       {/* Page Hero */}
       <section className="page-hero about-hero" aria-label="Εισαγωγή σελίδας">
+        <PageHeroBg page="about" />
         <div className="container">
           <ScrollReveal>
             <span className="eyebrow">Γνωριμία</span>

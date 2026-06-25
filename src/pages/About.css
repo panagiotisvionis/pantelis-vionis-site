@@ -1,4 +1,4 @@
-.about-hero { background: linear-gradient(135deg, var(--clr-bg-warm) 0%, #e8e3da 100%); }
+.about-hero { background: var(--clr-bg-warm); }
 
 /* Bio section */
 .about-bio {

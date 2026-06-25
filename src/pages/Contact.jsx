@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import SEOHead from '../components/ui/SEOHead.jsx'
 import ScrollReveal from '../components/ui/ScrollReveal.jsx'
+import PageHeroBg from '../components/ui/PageHeroBg.jsx'
 import './Contact.css'
 
 const services = [
@@ -76,6 +77,7 @@ export default function Contact() {
 
       {/* Page Hero */}
       <section className="page-hero" aria-label="Εισαγωγή σελίδας">
+        <PageHeroBg page="contact" />
         <div className="container">
           <ScrollReveal>
             <span className="eyebrow">Ξεκίνα σήμερα</span>

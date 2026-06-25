@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import SEOHead from '../components/ui/SEOHead.jsx'
 import ScrollReveal from '../components/ui/ScrollReveal.jsx'
 import { imgUrl } from '../utils/imgUrl.js'
+import PageHeroBg from '../components/ui/PageHeroBg.jsx'
 import './Services.css'
 
 const services = [
@@ -118,6 +119,7 @@ export default function Services() {
 
       {/* Page Hero */}
       <section className="page-hero" aria-label="Εισαγωγή σελίδας">
+        <PageHeroBg page="services" />
         <div className="container">
           <ScrollReveal>
             <span className="eyebrow">Τι προσφέρω</span>
