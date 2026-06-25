@@ -9,3 +9,4 @@ dist/
 *.jpeg
 *.png
 !public/images/**
+.github/
