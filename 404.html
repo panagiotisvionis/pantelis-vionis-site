@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Παντελής Βιωνής</title>
+    <script>
+      // SPA redirect: save original URL, redirect to site root
+      var l = window.location;
+      var base = '/' + l.pathname.split('/')[1] + '/';
+      sessionStorage.spaRedirect = l.href;
+      l.replace(l.protocol + '//' + l.host + base);
+    </script>
+  </head>
+</html>
